@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f0ea;
+    color: #798252;
+    border: 20px solid #0a0706;
+    font-weight: 400;
+    font-family: "Noto Sans", sans-serif
+}
+
+header{
+    padding: 2.3rem;
+}
+
+h1 {
+    color: #a2d595;
+    background-color: #331f19;
+    text-align: center;
+    border-style: solid;
+    border-color: #375b45;
+    border-width: 5px;
+}
+
+p {
+    text-align: justify;
+    font-size: large;
+}
+
+h1, p {
+    padding: 1rem;
+}
+
+button {
+    background-color: #ccd595;
+    color: #686f47;
+    width: 300px;
+    height: 50px;
+    border: solid #375b45 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: medium;
+    transition: transform 200ms ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.02);
+}
+
+#mensagem {
+    position: absolute;
+    top: 400px;
+    background-color:#ccd595;
+    color: #686f47;
+    border: solid #375b45 3px;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#hobbies {
+    background-color: #ccd595;
+    width: 450px;
+    height: 200px;
+    border: 2.5px solid #375b45;
+    border-radius: 10px;
+}
+
+ul li {
+    margin-left: 11rem;
+    padding: 1.5rem;
+    list-style-type: square;
+}
+
+img {
+    width: 15rem;
+    border-radius: 10px;
+}
+
+.desenho {
+    position: absolute;
+    top: 480px;
+    right: 700px;
+}
+
+.ler {
+    position: absolute;
+    top: 380px;
+    right: 400px;
+}
+
+.jogar {
+    position: absolute;
+    top: 480px;
+    right: 110px;
+}
+
+.tabela,th,td {
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+    border: 3px solid #0a0706;
+    border-radius: 10px;
+}
+
+table {
+    width: 40%;;
+    border-radius: 10px;
+}
+
+td {
+    width: 35%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+tr {
+    background-color: #ccd595;
+}
+
+a {
+    color: #798252;
+    border: solid 4px #375b45;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px;
+    border-style: dotted;
+    position: absolute;
+    top: 1190px;
+    right: 400px
+}
+
+a:hover {
+    color: #c07607;
+}
+
+.florr {
+    position: absolute;
+    top: 750px;
+    right: 350px;
+    rotate: 270deg;
+    transform: scale(3,3);
+    transition: transform 0.3s ease;
+}

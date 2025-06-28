@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Trabalho de Fundamentos de Desenvolvimento de Software</title>
+        <meta name="description" content="Um trabalho de Fundamentos de Desenvolvimento de Software"> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Parágrafo, título e botao-->
+        <header>
+            <h1>Trabalho de Fundamentos de Desenvolvimento de Software <br> Ana Karolyne de Jesus de Oliveira</h1>
+            <p>Meu nome é Ana Karolyne de Jesus de Oliveira, tenho 18 anos e <br> moro em Colombo, PR. Tenho muito interesse em programação,<br> embora eu seja iniciante ainda, além disso gosto de artes e<br> também gostaria de aprender mais sobre programação em jogos,<br> já que é um tópico que me atrai bastante.</p>
+            <button id="botao">Clique para ver uma mensagem!</button>
+            <div id="mensagem" style="display: none;">
+                "Cada dia é uma nova oportunidade para brilhar."
+            </div>
+        </header>
+        <main>
+            <!--Uma lista não ordenada com três hobbies ou atividades favoritas e imagens.-->
+            <section>
+                <h2>Hobbies:</h2>
+                <ul id="hobbies">
+                    <li>Desenhar</li>
+                    <li>Ler</li>
+                    <li>Jogar</li>
+                </ul>
+                <ul>
+                    <div class="desenho">
+                        <li><img src="./Imagens/desenho.webp" alt="Imagem de uma mão desenhando"></li>
+                    </div>
+                    <div class="ler">
+                        <li><img src="./Imagens/ler.webp" alt="Livros"></li>
+                    </div>
+                    <div class="jogar">
+                        <li><img src="./Imagens/jogar.jpg" alt="Pessoa jogando"></li>
+                    </div>
+                </ul>
+            </section>
+            <!--Uma tabela que contenha o nome e a imagem de três países que gostaria de visitar. (tabela com 3 linhas x 2 colunas)-->
+            <section>
+                <h2>Lugares que desejo visitar:</h2>
+                <table class="tabela">
+                    <tr>
+                        <td>Japão</td>
+                        <td><img src="./Imagens/Japão.jpg" alt="Imagem de ponto turistico japones"></td>
+                    </tr>
+                    <tr>
+                        <td>Grécia</td>
+                        <td><img src="./Imagens/Grécia.jpeg" alt="Imagem de ponto turistico grego"></td>
+                    </tr>
+                    <tr>
+                        <td>China</td>
+                        <td><img src="./Imagens/China.png" alt="Imagem de ponto turistico chinês"></td>
+                    </tr>
+                </table>
+            </section>
+            <!--Link do site de interesse-->
+            <section>
+                <a href="https://neal.fun/">Link para o Neal fun</a>
+            </section>
+            <!--Decorações-->
+            <section>
+                <div class="florr">
+                    <img src="./Imagens/frozinha.webp" alt="flor decorativa">
+                </div>
+            </section>
+        </main>
+        <!--mensagem ao clicar no botao, js-->
+        <script>
+            const botao= document.getElementById("botao")
+            const mensagem= document.getElementById("mensagem")
+
+            botao.addEventListener("click", function() {
+                if (mensagem.style.display === "none") {
+                    mensagem.style.display = "block"
+                } else {
+                    mensagem.style.display = "none"
+                }
+                });
+        </script>
+    </body>
+</html>
